@@ -124,6 +124,12 @@
   .jardin{animation:jardin 1.1s ease both}
   @keyframes jardin{from{opacity:0;transform:translateY(15px)}to{opacity:1;transform:none}}
   @media (prefers-reduced-motion:reduce){
+    .l,.m-caminante,.m-viajero,.m-torre{transition:opacity .2s linear!important;animation:none!important;transform:none!important}}
+
+    [data-escena="10"] .m-monolito,[data-escena="9"] .m-torres,[data-escena="9"] .m-oru,[data-escena="10"] .m-mushi,[data-escena="9"] .m-kaku,[data-escena="9"] .m-pasto,[data-escena="10"] .m-mimosa{opacity:1}
+  .jardin{animation:jardin 1.1s ease both}
+  @keyframes jardin{from{opacity:0;transform:translateY(15px)}to{opacity:1;transform:none}}
+  @media (prefers-reduced-motion:reduce){
     .l,.m-caminante,.m-viajero,.m-torre{transition:opacity .2s linear!important;animation:none!important;transform:none!important}
   }
 </style>
@@ -333,17 +339,18 @@
     <p class="l linea">Su presencia es lo único que lo mantiene encendido.</p>
   </div></div>
 
+   <div class="escena"><div class="marco">
+    <p class="l linea">Desde entonces el Oráculo recibe viajeros de todas partes</p>
+    <p class="l linea">que acuden en busca de su sabiduría.</p>
+  </div></div>>
+  </div></div>
+
   <div class="escena"><div class="marco">
     <p class="l linea">Hoy puedes recibir un <b>HAIKU</b>del oráculo, dejar una <b>PLEGARIA</b>,</p>
     <p class="l linea">o <b>SEMBRAR</b> una semilla.</p>
   </div></div>
 
-  <div class="escena"><div class="marco">
-    <div class="l marca-word">JARDÍN&nbsp;DEL&nbsp;ORÁCULO</div>
-    <p class="l linea">By; 39913.</p>
-    <div class="l url">39913em.github.io/jardin-del-oraculo</div>
-  </div></div>
-</div>
+ 
 
 <div id="zonas"><div id="zona-atras"></div><div id="zona-adelante"></div></div>
 
