@@ -235,7 +235,10 @@
 
 <div id="ilustracion">
 
+
   <img id="logoIntro" alt="Logo Jardín del Oráculo" src="./img/ico.png">
+
+ 
   <img id="qrFinal" alt="QR Jardín del Oráculo" src="./img/qr.png">
 
   <svg id="stage" viewBox="0 0 800 460" data-escena="0">
@@ -483,21 +486,24 @@ pintar();
 })();
 
 const escenas=[...document.querySelectorAll('#textos .escena')];
+
+
 const duraciones=[
-  3800,   // 0 intro
-  11000,  // 1 caminar + 4 líneas
-  5600,   // 2 detenerse
-  6500,   // 3 cuerpo / sonido
-  7000,   // 4 viajero
-  7000,   // 5 torres
-  6500,   // 6 descubrimiento del haiku
-  8500,   // 7 criaturas
-  8000,   // 8 visita
-  8000,   // 9 desde entonces
-  8000,   // 10 haiku / plegaria / semilla
-  9000,   // 11 cierre
-  7000    // 12 QR
+  5000,   // 0  logo intro                         00:00 - 00:05
+  15000,  // 1  hace mucho... una sola cosa         00:05 - 00:20
+  4000,   // 2  hasta que se detuvo...              00:20 - 00:24
+  7000,   // 3  su cuerpo... su idioma              00:24 - 00:31
+  10000,  // 4  un viajero extraño...               00:31 - 00:41
+  5000,   // 5  un día, cuatro torres...            00:41 - 00:46
+  8000,   // 6  descubrió el haiku...               00:46 - 00:54
+  12000,  // 7  llegaron los ORU...                 00:54 - 01:06
+  7000,   // 8  el jardín solo VIVE...              01:06 - 01:13
+  8000,   // 9  desde entonces...                   01:13 - 01:21
+  5000,   // 10 hoy puedes recibir...               01:21 - 01:26
+  5000,   // 11 animación de salida / cierre        01:26 - 01:31
+  10000   // 12 QR final                            01:31 - 01:41
 ];
+
 const progCont=document.getElementById('progreso');
 const stage=document.getElementById('stage');
 let idx=0,temporizador=null;
